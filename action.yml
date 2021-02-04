@@ -6,6 +6,10 @@ inputs:
   decrypt_password:
     required: true
 
+  keystore_dir:
+    required: false
+    default: ""
+
   keystore_name:
     required: true
 

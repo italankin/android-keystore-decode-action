@@ -10,7 +10,7 @@ gpg --quiet --batch --yes --decrypt --passphrase="$INPUT_DECRYPT_PASSWORD" \
 rm $SECRET_PLAIN
 
 PROPS="$INPUT_OUTPUT_DIR/$INPUT_PROPERTIES_NAME"
-echo "keystore=$KEYSTORE_OUTPUT" > $PROPS
+echo "keystore=$KEYSTORE_DIR$INPUT_KEYSTORE_NAME" > $PROPS
 echo "keystore_password=$INPUT_KEYSTORE_PASSWORD" >> $PROPS
 echo "alias=$INPUT_KEY_ALIAS" >> $PROPS
 echo "alias_password=$INPUT_KEY_ALIAS_PASSWORD" >> $PROPS
