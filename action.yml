@@ -1,27 +1,27 @@
 name: 'Android keystore decode'
 inputs:
-  encrypted-keystore:
+  encrypted_keystore:
     required: true
 
-  decrypt-password:
+  decrypt_password:
     required: true
 
-  output-dir:
+  keystore_name:
     required: true
 
-  keystore-name:
+  properties_name:
     required: true
 
-  properties-name:
+  keystore_password:
     required: true
 
-  keystore-password:
+  key_alias:
     required: true
 
-  key-alias:
+  key_alias_password:
     required: true
 
-  key-alias-password:
+  output_dir:
     required: true
 
 runs:
