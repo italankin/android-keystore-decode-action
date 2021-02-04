@@ -1,0 +1,29 @@
+name: 'Android keystore decode'
+inputs:
+  encrypted-keystore:
+    required: true
+
+  decrypt-password:
+    required: true
+
+  output-dir:
+    required: true
+
+  keystore-name:
+    required: true
+
+  properties-name:
+    required: true
+
+  keystore-password:
+    required: true
+
+  key-alias:
+    required: true
+
+  key-alias-password:
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
